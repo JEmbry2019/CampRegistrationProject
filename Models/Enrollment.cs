@@ -13,7 +13,6 @@ namespace CampRegistrationProject.Models
         public Guid MealsID { get; set; }
         public Guid CampersID { get; set; }
         public Menu? Menu { get; set; }
-
         public Guid ActivitiesID {get; set;}
        
         public Campers Campers { get; set; }

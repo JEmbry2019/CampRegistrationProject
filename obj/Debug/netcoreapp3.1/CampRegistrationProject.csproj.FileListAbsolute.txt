@@ -137,3 +137,8 @@ C:\Users\jmsem\Desktop\CampRegistrationProject\bin\Debug\netcoreapp3.1\ru\Micros
 C:\Users\jmsem\Desktop\CampRegistrationProject\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\jmsem\Desktop\CampRegistrationProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\jmsem\Desktop\CampRegistrationProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\jmsem\Desktop\CampRegistrationProject\obj\Debug\netcoreapp3.1\Razor\Views\CampRegistrationProject\Create.cshtml.g.cs
+C:\Users\jmsem\Desktop\CampRegistrationProject\obj\Debug\netcoreapp3.1\Razor\Views\CampRegistrationProject\Delete.cshtml.g.cs
+C:\Users\jmsem\Desktop\CampRegistrationProject\obj\Debug\netcoreapp3.1\Razor\Views\CampRegistrationProject\Details.cshtml.g.cs
+C:\Users\jmsem\Desktop\CampRegistrationProject\obj\Debug\netcoreapp3.1\Razor\Views\CampRegistrationProject\Edit.cshtml.g.cs
+C:\Users\jmsem\Desktop\CampRegistrationProject\obj\Debug\netcoreapp3.1\Razor\Views\CampRegistrationProject\Index.cshtml.g.cs

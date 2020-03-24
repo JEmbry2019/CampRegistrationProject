@@ -20531,8 +20531,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Delete.cshtml",
+      "TargetPath": "Views\\CampRegistrationProject\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Index.cshtml",
+      "TargetPath": "Views\\CampRegistrationProject\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20541,8 +20551,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Details.cshtml",
+      "TargetPath": "Views\\CampRegistrationProject\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Edit.cshtml",
+      "TargetPath": "Views\\CampRegistrationProject\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20553,6 +20573,11 @@
     {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Create.cshtml",
+      "TargetPath": "Views\\CampRegistrationProject\\Create.cshtml",
       "FileKind": "mvc"
     }
   ],
