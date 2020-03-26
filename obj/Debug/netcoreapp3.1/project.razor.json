@@ -20526,6 +20526,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Campers\\Index.cshtml",
+      "TargetPath": "Views\\Campers\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Campers\\Delete.cshtml",
+      "TargetPath": "Views\\Campers\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20543,11 @@
     {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\CampRegistrationProject\\Delete.cshtml",
       "TargetPath": "Views\\CampRegistrationProject\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Campers\\Details.cshtml",
+      "TargetPath": "Views\\Campers\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20566,6 +20581,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Campers\\Create.cshtml",
+      "TargetPath": "Views\\Campers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -20573,6 +20593,11 @@
     {
       "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\jmsem\\Desktop\\CampRegistrationProject\\Views\\Campers\\Edit.cshtml",
+      "TargetPath": "Views\\Campers\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

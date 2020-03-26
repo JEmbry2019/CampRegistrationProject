@@ -9,7 +9,7 @@ namespace CampRegistrationProject.Models
         public Guid ID { get; set; }
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
-        
+        public string email { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
