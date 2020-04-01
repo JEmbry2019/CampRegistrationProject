@@ -18,4 +18,6 @@ namespace CampRegistrationProject.Models
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
+
+    // Need to correct
 }
