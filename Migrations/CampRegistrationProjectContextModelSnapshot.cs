@@ -15,35 +15,18 @@ namespace CampRegistrationProject.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.2")
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CampRegistrationProject.Models.Activities", b =>
+            modelBuilder.Entity("CampRegistrationProject.Models.Camper", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("EnrollmentDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Game")
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Sport")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Activities");
-                });
-
-            modelBuilder.Entity("CampRegistrationProject.Models.Campers", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("datetime2");
@@ -59,69 +42,58 @@ namespace CampRegistrationProject.Migrations
                     b.ToTable("Campers");
                 });
 
+            modelBuilder.Entity("CampRegistrationProject.Models.Course", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Credits")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Courses");
+                });
+
             modelBuilder.Entity("CampRegistrationProject.Models.Enrollment", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ActivitiesID")
+                    b.Property<Guid>("CamperID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CampersID")
+                    b.Property<Guid>("CourseID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("MealsID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int?>("Menu")
+                    b.Property<int?>("Grade")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("ActivitiesID");
+                    b.HasIndex("CamperID");
 
-                    b.HasIndex("CampersID");
-
-                    b.HasIndex("MealsID");
+                    b.HasIndex("CourseID");
 
                     b.ToTable("Enrollments");
                 });
 
-            modelBuilder.Entity("CampRegistrationProject.Models.Meals", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Menu")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Perday")
-                        .HasColumnType("int");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Meals");
-                });
-
             modelBuilder.Entity("CampRegistrationProject.Models.Enrollment", b =>
                 {
-                    b.HasOne("CampRegistrationProject.Models.Activities", "Activities")
+                    b.HasOne("CampRegistrationProject.Models.Camper", "Camper")
                         .WithMany("Enrollments")
-                        .HasForeignKey("ActivitiesID")
+                        .HasForeignKey("CamperID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CampRegistrationProject.Models.Campers", "Campers")
+                    b.HasOne("CampRegistrationProject.Models.Course", "Course")
                         .WithMany("Enrollments")
-                        .HasForeignKey("CampersID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CampRegistrationProject.Models.Meals", "Meals")
-                        .WithMany("Enrollments")
-                        .HasForeignKey("MealsID")
+                        .HasForeignKey("CourseID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

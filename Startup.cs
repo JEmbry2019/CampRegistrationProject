@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+
 using Microsoft.EntityFrameworkCore;
 using CampRegistrationProject.Data;
 
@@ -26,9 +27,8 @@ namespace CampRegistrationProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<CampRegistrationProjectContext>(options =>
+             services.AddDbContext<CampRegistrationProjectContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

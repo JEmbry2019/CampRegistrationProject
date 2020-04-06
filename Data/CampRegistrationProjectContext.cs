@@ -7,14 +7,12 @@ namespace CampRegistrationProject.Data
     public class CampRegistrationProjectContext : DbContext
     {
         public CampRegistrationProjectContext(DbContextOptions<CampRegistrationProjectContext> options) : base(options)
-        {}
-        
+        {
+        }
 
         //This is where we register our models as entities
-        public DbSet<Campers> Camper { get; set; }
-        public DbSet<Activities> Activitie { get; set; }
-        public DbSet<Meals> Meal { get; set; }
+        public DbSet<Course> Courses { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
-        
+        public DbSet<Camper> Campers { get; set; }
     }
 }

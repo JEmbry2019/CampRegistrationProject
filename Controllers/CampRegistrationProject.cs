@@ -22,7 +22,7 @@ namespace CampRegistrationProject.Controllers
         // GET: CampRegistrationProject
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Camper.ToListAsync());
+            return View(await _context.Campers.ToListAsync());
         }
 
         // GET: CampRegistrationProject/Details/5
@@ -33,7 +33,7 @@ namespace CampRegistrationProject.Controllers
                 return NotFound();
             }
 
-            var campers = await _context.Camper
+            var campers = await _context.Campers
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (campers == null)
             {
@@ -74,7 +74,7 @@ namespace CampRegistrationProject.Controllers
                 return NotFound();
             }
 
-            var campers = await _context.Camper.FindAsync(id);
+            var campers = await _context.Campers.FindAsync(id);
             if (campers == null)
             {
                 return NotFound();
@@ -125,7 +125,7 @@ namespace CampRegistrationProject.Controllers
                 return NotFound();
             }
 
-            var campers = await _context.Camper
+            var campers = await _context.Campers
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (campers == null)
             {
@@ -140,15 +140,15 @@ namespace CampRegistrationProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var campers = await _context.Camper.FindAsync(id);
-            _context.Camper.Remove(campers);
+            var campers = await _context.Campers.FindAsync(id);
+            _context.Campers.Remove(campers);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CampersExists(Guid id)
         {
-            return _context.Camper.Any(e => e.ID == id);
+            return _context.Campers.Any(e => e.ID == id);
         }
     }
 }
